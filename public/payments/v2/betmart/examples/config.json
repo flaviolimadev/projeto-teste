@@ -1,0 +1,8 @@
+{
+    "client_id": "Client_Id_d1264891fa42a00652d0cc7ac89d7ee63d6626b4",
+    "client_secret": "Client_Secret_25f4972d70f30086eb8f0af0597d120356146d07",
+    "pix_cert": "../certs/producao-300662-betmart.pem",
+    "sandbox": false,
+    "debug": false,
+    "timeout": 30
+}

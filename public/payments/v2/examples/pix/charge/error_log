@@ -1,0 +1,50 @@
+[07-Feb-2022 22:17:21 America/Fortaleza] PHP Fatal error:  Uncaught Error: Object of class mysqli_result could not be converted to string in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/fim.php:26
+Stack trace:
+#0 {main}
+  thrown in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/fim.php on line 26
+[09-Mar-2022 23:03:34 America/Fortaleza] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (to):  in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php:1068
+Stack trace:
+#0 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(990): PHPMailer\PHPMailer\PHPMailer->addOrEnqueueAnAddress('to', '', '')
+#1 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/fim.php(205): PHPMailer\PHPMailer\PHPMailer->addAddress(NULL)
+#2 {main}
+  thrown in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php on line 1068
+[06-Jul-2022 13:56:29 America/Fortaleza] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php:2024
+Stack trace:
+#0 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1844): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1587): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 6 Ju...', 'This is a multi...')
+#2 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1423): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/fim.php(124): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php on line 2024
+[06-Jul-2022 13:56:40 America/Fortaleza] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php:2024
+Stack trace:
+#0 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1844): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1587): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 6 Ju...', 'This is a multi...')
+#2 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1423): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/fim.php(124): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php on line 2024
+[06-Jul-2022 13:56:45 America/Fortaleza] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php:2024
+Stack trace:
+#0 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1844): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1587): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 6 Ju...', 'This is a multi...')
+#2 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1423): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/fim.php(124): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php on line 2024
+[06-Jul-2022 13:57:05 America/Fortaleza] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php:2024
+Stack trace:
+#0 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1844): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1587): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 6 Ju...', 'This is a multi...')
+#2 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1423): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/fim.php(124): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php on line 2024
+[06-Jul-2022 13:58:47 America/Fortaleza] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php:2024
+Stack trace:
+#0 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1844): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1587): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 6 Ju...', 'This is a multi...')
+#2 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php(1423): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/fim.php(124): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home2/somosh60/app.ctrlser.com/produto/multiwin/gn-api-sdk-php-master/examples/pix/charge/src/PHPMailer.php on line 2024

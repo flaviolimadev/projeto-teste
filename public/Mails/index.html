@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Email</title>
+    <style>
+        .lay-welcome {
+            display: nonee !important;
+        }
+
+        .lay-subscribe, .lay-confirm {
+            display: none;
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body, p, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        body {
+            background-color: rgb(236, 236, 236);
+            margin: 2rem auto;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        header img {
+            max-width: 250px;
+        }
+        .lay-welcome, .lay-subscribe, .lay-confirm {
+            margin: 0rem 3rem 3rem;
+        }
+        section.welcome, section.subscribe {
+            background-color: #fff;
+            padding: 2rem;
+            border-top: 5px solid #7100a1;
+            border-radius: 5px;
+        }
+        .welc-cima, .welc-baixo {
+            text-align: center;
+        }
+        .welc-cima {
+            margin-bottom: 2rem;
+        }
+        span.title-mail {
+            display: block;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .cats-welc {
+            margin: 2rem;
+        }
+        span.submail {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .cats-welc ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .welc-baixo a {
+            background: #7100a1;
+            color: #fff;
+            font-weight: 600;
+            padding: 20px 10px;
+            text-transform: uppercase;
+            display: block;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-top: 2rem;
+            max-width: 300px
+        }
+        .area-user {
+            background-color: #fff;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .area-user img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .area-user p {
+            margin-top: 2rem;
+        }
+        p.thanks {
+            margin: 2rem 0;
+        }
+        .subscribe .welc-baixo a {
+            margin-bottom: 2rem;
+        }
+        .footer-subs {
+            padding: 2rem;
+            text-align: center;
+            font-size: 14px;
+            color: #000;
+        }
+        .footer-subs ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem auto;
+        }
+        .footer-subs ul a {
+            color: #000;
+            text-decoration: underline;
+        }
+        p.quit {
+            margin-bottom: 1rem;
+        }@media (max-width: 1000px) {
+            .lay-confirm .welc-baixo, .lay-confirm .footer-subs {
+                text-align: left;
+            }
+            .lay-confirm .welc-baixo a {
+                text-align: center !important;
+            }
+            .lay-confirm .footer-subs ul {
+                justify-content: left;
+            }
+        }
+        @media (max-width: 600px) {
+            header img {
+                width: 150px;
+            }
+            .lay-welcome, .lay-subscribe, .lay-confirm {
+                margin: 0 1rem 1rem;
+            }
+            .welc-cima img {
+                width: 150px;
+            }
+            .area-user img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        @media (max-width: 400px) {
+            section.welcome, section.subscribe {
+                padding: 1rem 10px;
+                font-size: 14px;
+            }    
+            .footer-subs ul a img {
+                width: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" width="250px">
+    </header>
+    <main>
+        <section class="lay-welcome">
+            <section class="welcome">
+                <div class="welc-cima">
+                    <img src="img/foguete.png" width="300px">
+                </div>
+                <div class="welc-baixo">
+                    <span class="title-mail">Welcome!</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate necessitatibus iusto saepe</p>
+    
+                    <div class="cats-welc">
+                        <span class="submail">Explore our trending Category</span>
+                        <ul>
+                            <li>
+                                <img src="img/icone-cat.png" width="50px">
+                            </li>
+                            <li>
+                                <img src="img/icone-cat.png" width="50px">
+                            </li>
+                            <li>
+                                <img src="img/icone-cat.png" width="50px">
+                            </li>
+                            <li>
+                                <img src="img/icone-cat.png" width="50px">
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus earum odio quod doloribus voluptate ad temporibus eos, sapiente suscipit quae sed neque expedita quam dolorem dolorum rem laudantium perspiciatis?</p>
+    
+                    <a href="#">Explore Now</a>
+                </div>
+            </section>
+
+            <div class="area-user">
+                <img src="img/usuario.png" alt="Usuário" width="200px">
+
+                <span class="submail">David Deo</span>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias maiores eligendi id explicabo culpa dolorum quia. Iste incidunt molestias distinctio pariatur? Ipsum exercitationem enim commodi, quaerat in iure iste quisquam?</p>
+
+                <p>Lorem ipsum dolor: sit amet consectetur.</p>
+            </div>
+        </section>
+
+        <section class="lay-subscribe">
+            <section class="subscribe">
+                <div class="welc-cima">
+                    <img src="img/novo-email.png" width="300px">
+                </div>
+                <div class="welc-baixo">
+                    <span class="title-mail">Hi "John Doe"</span>
+
+                    <p>Verify Your Email Account</p>
+    
+                    <p class="thanks">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus earum odio quod doloribus voluptate ad temporibus eos.</p>
+    
+                    <a href="#">Subscribe Now</a>
+
+                    <img src="img/logo.png" width="100px">
+                </div>
+            </section>
+            <div class="footer-subs">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.png" width="50px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/instagram.png" width="50px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram.png" width="50px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/twitter.png" width="50px">
+                        </a>
+                    </li>
+                </ul>
+
+                <span>© Empresa Inc. | 800 Broadway, Suite 1500 | New York, NY 0000123, USA.</span>
+
+                <ul>
+                    <li>
+                        <a href="#">Site</a>
+                    </li>
+                    <li>
+                        <a href="#">Email Preferences</a>
+                    </li>
+                    <li>
+                        <a href="#">Política de Privacidade</a>
+                    </li>
+                </ul>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae itaque, qui iste
+                    <a href="#">examplemail@mail.com</a>
+                rerum quidem aperiam optio. Fugit qui ipsam ducimus totam labore asperiores vel reiciendis, nemo soluta pariatur doloribus nesciunt.</p>
+            </div>
+        </section>
+
+        <section class="lay-confirm">
+            <section class="subscribe">
+                <div class="welc-cima">
+                    <span class="title-mail">Confirmação</span>
+                </div>
+                <div class="welc-baixo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut tempora ea quibusdam esse, eveniet nemo voluptates quas exercitationem.</p>
+
+                    <a href="#">COnfirm Account</a>
+    
+                    <p class="thanks">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus earum odio quod doloribus voluptate ad temporibus eos.</p>
+    
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corporis recusandae ut asperiores fuga enim excepturi quod provident sed consectetur in eveniet nemo iusto sit, fugit ipsum qui eum. Praesentium.
+                    </p>
+                </div>
+            </section>
+            <div class="footer-subs">
+                <ul>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Billing</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+
+                <p class="quit">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae itaque, qui iste
+                    <a href="#">examplemail@mail.com</a>
+                .</p>
+
+                <span>© Empresa Inc. | 800 Broadway, Suite 1500 | New York, NY 0000123, USA.</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

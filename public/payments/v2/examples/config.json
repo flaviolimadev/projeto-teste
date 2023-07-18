@@ -1,0 +1,8 @@
+{
+    "client_id": "Client_Id_9a0fa903c5be71437b9b8d015e50ba3ca03c8e5d",
+    "client_secret": "Client_Secret_c99b51c2a3e1272e5262447f822f9920b41c635c",
+    "pix_cert": "../certs/producao-412071-CTRLSER PAY.pem",
+    "sandbox": false,
+    "debug": false,
+    "timeout": 30
+}

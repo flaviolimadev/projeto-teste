@@ -1,0 +1,90 @@
+body {
+    background-image: url("https://app.antired.com.br/assets/img/bg-campodefutebol.jpg") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+body .card, body.dark .card {
+    background: rgb(0 0 0 / 75%) !important;
+    border: 1px solid rgb(0 0 0 / 75%) !important;
+}
+
+body p ,body.dark p, h2, span, label {
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+    color: #888ea8;
+}
+
+body .form-control, body.dark .form-control {
+    background: rgba(0, 0, 0, 0.75) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #888ea8 !important;
+}
+
+body .btn-secondary, body.dark .btn-secondary {
+    background-color: #ff1747 !important;
+    border-color: #ff1747 !important;
+    box-shadow: 0 10px 20px -15px rgb(238 20 70) !important;
+    font-weight: 700;
+}
+
+body.dark .btn-secondary:hover ,body .btn-secondary:hover {
+    background-color: #ff1747 !important;
+    border-color: #ff1747 !important;
+    box-shadow: none !important;
+}
+
+body button.btn-social-login ,body.dark button.btn-social-login {
+    background: rgb(255 23 71) !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+}
+
+body .btn .btn-text-inner,body.dark .btn .btn-text-inner {
+    color: #fff !important;
+}
+
+body .seperator .seperator-text span, body.dark .seperator .seperator-text span {
+    background: #030605;
+    color: #888ea8;
+    border-radius: 5px;
+}
+
+body .text-warning, body.dark .text-warning {
+    color: #ff1747 !important;
+    font-weight: 700;
+}
+
+body .text-primary, body .text-center a, body.dark .text-primary, body.dark .text-center a {
+    color: #ff1747 !important;
+}
+
+body.registro label.form-check-label {
+    position: relative;
+    top: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-self: ce
+    ;
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 575px) {
+    body {
+        height: 100% !important;
+    }
+}
+
+@media (max-width: 380px) {
+    body.registro .form-check-input {
+        position: relative;
+        top: 28px;
+    }
+    body.registro label.form-check-label {
+        margin-left: 10px;
+    }
+}

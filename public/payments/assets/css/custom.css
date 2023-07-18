@@ -1,0 +1,21 @@
+.navbar .nav-logo a.navbar-brand img {
+    width: 6pc;
+    height: 40px;
+    /* max-width: 50%; */
+}
+
+
+#topbar .theme-brand li.theme-logo img {
+    width: 6pc;
+    height: 40px;
+}
+
+.widget-activity-four .timeline-line .item-timeline .t-time {
+    margin: 0;
+    min-width: 80px;
+    max-width: 120px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #acb0c3;
+    letter-spacing: 1px;
+}
