@@ -54,6 +54,8 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/affiliates/received', [affiliatesController::class, 'received'])->name('received');
     Route::get('/affiliates/sends', [affiliatesController::class, 'sends'])->name('sends');
 
+    Route::get('/affiliates/send/{id}', [affiliatesController::class, 'send'])->name('send');
+
     Route::get('/affiliates/creat-affiliate/{id}', [affiliatesController::class, 'create'])->name('create');
     Route::get('/affiliates/update-affiliate/{id}/{type}', [affiliatesController::class, 'updateAffiliate'])->name('updateAffiliate');
 

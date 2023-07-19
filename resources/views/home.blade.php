@@ -6,7 +6,7 @@
 @section('conteudo')
     <link href="{{ asset('cork/src/assets/css/dark/components/list-group.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('cork/src/assets/css/dark/dashboard/dash_2.css') }}" rel="stylesheet" type="text/css" />
-    
+
     <style>
         body.dark .widget {
             position: relative;
@@ -190,9 +190,9 @@
             }
         }
     </style>
-    
-    
-    
+
+
+
     <div class="row dashnew">
         <div class="area-btn-dados mb-2" style="padding: 0px; display: flex; align-items: center; justify-content: space-between;">
             <h5 style="padding-left: 20px;margin-bottom: 0px;">Resumo financeiro</h5>
@@ -298,7 +298,7 @@
                 </div>
 
                 <div class="widget-content box-dados">
-                    <div id="revenueMonthly"></div>
+                    <div id="s-line-area"></div>
                 </div>
             </div>
         </div>
@@ -333,6 +333,46 @@
             ocultarButton.style.display = 'flex';
             exibirButton.style.display = 'none';
         }
+
+        var sLineArea = {
+        chart: {
+            height: 350,
+            type: 'area',
+            toolbar: {
+            show: false,
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth'
+        },
+        series: [{
+            name: 'series1',
+            data: []
+        }, {
+            name: 'series2',
+            data: []
+        }],
+
+        xaxis: {
+            type: 'datetime',
+            categories: [],
+        },
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            },
+        }
+    }
+
+    var chart = new ApexCharts(
+        document.querySelector("#s-line-area"),
+        sLineArea
+    );
+
+    chart.render();
     </script>
 
     <!--

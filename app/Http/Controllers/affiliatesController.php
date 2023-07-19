@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Affiliates;
+use App\Models\Checkout;
+use App\Models\Classe;
+use App\Models\Module;
+use App\Models\Pixel;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -16,9 +20,9 @@ class affiliatesController extends Controller
         $AuthUser = Auth::user();
         $sends = Affiliates::where('user_id', $AuthUser->id)->where('status', 1)->get();
         $array_sends = [];
-        
+
         foreach($sends as $send){
-            
+
             $produto_atual = Product::find($send->product_id);
             $user_id = User::find($send->affiliate_id);
 
@@ -38,7 +42,7 @@ class affiliatesController extends Controller
             'affiliacoes' => $array_sends
         ]);
 
-        
+
     }
 
     public function received(Request $r){
@@ -46,9 +50,9 @@ class affiliatesController extends Controller
         $AuthUser = Auth::user();
         $sends = Affiliates::where('user_id', $AuthUser->id)->get();
         $array_sends = [];
-        
+
         foreach($sends as $send){
-            
+
             $produto_atual = Product::find($send->product_id);
             $user_id = User::find($send->affiliate_id);
 
@@ -75,9 +79,9 @@ class affiliatesController extends Controller
         $AuthUser = Auth::user();
         $sends = Affiliates::where('affiliate_id', $AuthUser->id)->get();
         $array_sends = [];
-        
+
         foreach($sends as $send){
-            
+
             $produto_atual = Product::find($send->product_id);
             $user_id = User::find($send->user_id);
 
@@ -99,14 +103,36 @@ class affiliatesController extends Controller
         ]);
     }
 
+    public function send($id){
+
+        $AuthUser = Auth::user();
+
+        $product = Product::find($id);
+        $modules = Module::where('course_id', $product->course)->get();
+        $classes = Classe::where('course_id', $product->course)->get();
+        $checkouts = Checkout::where('product_id', $id)->get();
+        $pixels = Pixel::where('user_id', $AuthUser->id)->get();
+
+
+        return view('send', [
+            'AuthUser' => $AuthUser,
+            'product' => $product,
+            'modules' => $modules,
+            'classes' => $classes,
+            'checkouts' => $checkouts,
+            'pixels' => $pixels,
+        ]);
+
+    }
+
     public function create($id){
 
         $AuthUser = Auth::user();
         $product = Product::find($id);
-        
+
         #Verificando se o usuario ja é affiliado ao produto;
         if(!Affiliates::where('affiliate_id', $AuthUser->id)->where('product_id', $id)->first()){
-            
+
             #Criando um novo affiliado para o produto;
             $new_affiliate = new Affiliates;
             $new_affiliate->user_id = $product->user_id;

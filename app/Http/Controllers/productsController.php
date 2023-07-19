@@ -439,6 +439,7 @@ class productsController extends Controller
         $checkout = Checkout::find($r->checkout);
 
         $new_pixel = new Pixel;
+        $new_pixel->user_id = $AuthUser->id;
         $new_pixel->product_id = $checkout->product_id;
         $new_pixel->checkout_id = $checkout->id;
         $new_pixel->provedor = $r->provedor;
